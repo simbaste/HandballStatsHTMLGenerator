@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet" href="res.css">
+    <link rel="stylesheet" href="./css/res.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>le site beta</title>
     <meta name="description" content="">

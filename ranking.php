@@ -6,10 +6,10 @@
 // Login   <simomb_s@epitech.net>
 //
 // Started on  Tue Nov 29 12:58:20 2016 SIMO MBA
-// Last update Tue Nov 29 12:58:21 2016 SIMO MBA
+// Last update Thu Dec  1 14:41:44 2016 SIMO MBA
 //
 
-include("template.class.php");
+include("template/template.class.php");
 
 $head = array("PTS" => "PTS", "MJ" => "MJ", "VICT" => "VICT",
 	      "NUL" => "NUL", "DEF" => "DÉF", "BUTS_P" => "BUTS POUR",
@@ -17,7 +17,7 @@ $head = array("PTS" => "PTS", "MJ" => "MJ", "VICT" => "VICT",
 	      "BUT_P_E" => "BUT POUR EXT", "BUT_C_D" => "BUT CONT DOM",
 	      "BUT_C_E" => "BUT CONT EXT");
 
-$head_row = new Template("init_head.tpl");
+$head_row = new Template("build/templates/init_head.tpl");
 
 foreach ($head as $key => $value) {
   $head_row->set($key, $value);
@@ -27,7 +27,7 @@ $page = file_get_contents("http://lnh.fr/remote/equipes/creteil/xml_saisonClasse
 $xml = simplexml_load_string($page);
 $i = 0;
 while (isset($xml->equipe[$i])) {
-  $body_col = new Template("col.tpl");
+  $body_col = new Template("build/templates/col.tpl");
 
   $body_col->set("num", (string)$xml->equipe[$i]->position);
   $body_col->set("src_img", (string)$xml->equipe[$i]->equipeLogo);
@@ -49,13 +49,15 @@ while (isset($xml->equipe[$i])) {
   $i++;
 }
 
-$body = new Template("ranking.tpl");
+$body = new Template("build/templates/ranking.tpl");
 $bodyContents = Template::merge($bodyColTemplate);
 $body->set("tab_head", $head_row->output());
 $body->set("tab_contents", $bodyContents);
 
 $contents = $body->output();
 
-$open = fopen("ranking.html", "w");
+$open = fopen("build/ranking.html", "w", true);
 fwrite($open, $contents);
+/* $file = $_FILES['config']["ranking.html"]; */
+/* rename($file, './build'.$file); */
 fclose($open);
