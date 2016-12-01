@@ -1,42 +1,42 @@
 			<tr>
-				<td>
+				<td nowrap>
 					<strong><em id="num">[@num]</em></strong>
 				</td>
-				<td>
+				<td nowrap>
 					<img src="[@src_img]" width="30" height="30"/>
 					<strong>[@pays]</strong>
 				</td>
-				<td>
+				<td nowrap>
 					[@PTS]
 				</td>
-				<td>
+				<td nowrap>
 					[@MJ]
 				</td>
-				<td>
+				<td nowrap>
 					[@VICT]
 				</td>
-				<td>
+				<td nowrap>
 					[@NUL]
 				</td>
-				<td>
+				<td nowrap>
 					[@DEF]
 				</td>
-				<td>
+				<td nowrap>
 					[@BUTS_POUR]
 				</td>
-				<td>
+				<td nowrap>
 					[@BUTS_CONTRE]
 				</td>
-				<td>
+				<td nowrap>
 					[@BUT_P_D]
 				</td>
-				<td>
+				<td nowrap>
 					[@BUT_P_E]
 				</td>
-				<td>
+				<td nowrap>
 					[@BUT_C_D]
 				</td>
-				<td>
+				<td nowrap>
 					[@BUT_C_E]
 				</td>
 			</tr>

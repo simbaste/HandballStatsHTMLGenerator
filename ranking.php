@@ -6,7 +6,7 @@
 // Login   <simomb_s@epitech.net>
 //
 // Started on  Tue Nov 29 12:58:20 2016 SIMO MBA
-// Last update Thu Dec  1 14:41:44 2016 SIMO MBA
+// Last update Thu Dec  1 15:56:46 2016 SIMO MBA
 //
 
 include("template/template.class.php");
@@ -58,6 +58,4 @@ $contents = $body->output();
 
 $open = fopen("build/ranking.html", "w", true);
 fwrite($open, $contents);
-/* $file = $_FILES['config']["ranking.html"]; */
-/* rename($file, './build'.$file); */
 fclose($open);
