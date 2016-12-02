@@ -1,0 +1,28 @@
+{
+    "require": {
+	"sportarchive/cloud-processing-engine-sdk": "dev-master",
+	"sportarchive/cloud-processing-engine-client-sdk-php": "dev-master",
+	"sportarchive/aws-sns-php-handler": "dev-master",
+	"symfony/console": "^2.7",
+	"symfony/monolog-bridge": "~2.7",
+	"aws/aws-sdk-php": "2.*",
+	"league/oauth2-client": "~1.0",
+	"abraham/twitteroauth": "0.6.1",
+	"league/oauth2-google": "~1.0",
+	"league/oauth2-facebook": "~1.0",
+	"sammyk/facebook-query-builder": "^2.0",
+	"google/apiclient": "1.1.6",
+	"justinrainbow/json-schema": "~1.3",
+	"cosenary/instagram": "2.3",
+	"fguillot/picofeed": "~0.1",
+	"embedly/embedly-php": "~0.5",
+	"symfony/finder": "~2.8",
+	"sendwithus/api": "dev-master",
+	"facebook/graph-sdk" : "~5.0"
+    },
+    "autoload": {
+	"psr-4": {
+	    "SportArchive\\Scripts\\Command\\": "src/"
+	}
+    }
+}
