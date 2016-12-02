@@ -6,7 +6,7 @@
 // Login   <simomb_s@epitech.net>
 //
 // Started on  Tue Nov 29 12:58:20 2016 SIMO MBA
-// Last update Fri Dec  2 15:59:45 2016 SIMO MBA
+// Last update Fri Dec  2 17:40:20 2016 SIMO MBA
 //
 
 require __DIR__.'/vendor/autoload.php';
@@ -30,14 +30,14 @@ class Ranking
   }
 
   function get_html_page() {
-    $head_row = new Template("build/templates/init_head.tpl");
+    $head_row = new Template("templates/init_head.tpl");
     foreach ($this->head as $key => $value) {
       $head_row->set($key, $value);
     }
     $this->xml = simplexml_load_string($this->page);
     $i = 0;
     while (isset($this->xml->equipe[$i])) {
-      $body_col = new Template("build/templates/col.tpl");
+      $body_col = new Template("templates/col.tpl");
 
       $body_col->set("num", (string)$this->xml->equipe[$i]->position);
       $body_col->set("src_img", (string)$this->xml->equipe[$i]->equipeLogo);
@@ -59,7 +59,7 @@ class Ranking
       $i++;
     }
 
-    $this->body = new Template("build/templates/ranking.tpl");
+    $this->body = new Template("templates/ranking.tpl");
     $bodyContents = Template::merge($bodyColTemplate);
     $this->body->set("tab_head", $head_row->output());
     $this->body->set("tab_contents", $bodyContents);
