@@ -14,7 +14,6 @@ return array(
     'Symfony\\Component\\Debug\\' => array($vendorDir . '/symfony/debug'),
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Symfony\\Bridge\\Monolog\\' => array($vendorDir . '/symfony/monolog-bridge'),
-    'SportArchive\\Scripts\\Command\\' => array($baseDir . '/src'),
     'SammyK\\FacebookQueryBuilder\\' => array($vendorDir . '/sammyk/facebook-query-builder/src'),
     'SammyK\\FacebookQueryBuilderTests\\' => array($vendorDir . '/sammyk/facebook-query-builder/tests'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),

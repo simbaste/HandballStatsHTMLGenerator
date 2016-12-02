@@ -25,7 +25,6 @@ class ComposerStaticInite4527a7204fb5866bd42461b4d29acc4
             'Symfony\\Component\\Debug\\' => 24,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Bridge\\Monolog\\' => 23,
-            'SportArchive\\Scripts\\Command\\' => 29,
             'SammyK\\FacebookQueryBuilder\\' => 28,
             'SammyK\\FacebookQueryBuilderTests\\' => 33,
         ),
@@ -95,10 +94,6 @@ class ComposerStaticInite4527a7204fb5866bd42461b4d29acc4
         'Symfony\\Bridge\\Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/monolog-bridge',
-        ),
-        'SportArchive\\Scripts\\Command\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'SammyK\\FacebookQueryBuilder\\' => 
         array (

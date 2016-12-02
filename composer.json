@@ -19,10 +19,5 @@
 	"symfony/finder": "~2.8",
 	"sendwithus/api": "dev-master",
 	"facebook/graph-sdk" : "~5.0"
-    },
-    "autoload": {
-	"psr-4": {
-	    "SportArchive\\Scripts\\Command\\": "src/"
-	}
     }
 }

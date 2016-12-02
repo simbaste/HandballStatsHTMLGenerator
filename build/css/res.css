@@ -5,7 +5,7 @@
 ** Login   <simomb_s@epitech.net>
 **
 ** Started on  Tue Nov 29 13:10:24 2016 SIMO MBA
-** Last update Thu Dec  1 15:54:58 2016 SIMO MBA
+** Last update Fri Dec  2 13:02:52 2016 SIMO MBA
 */
 
 @charset "UTF-8";
@@ -16,7 +16,7 @@ body {
     font-weight: 300;
     line-height: 1.42em;
     color:#A7A1AF;
-    background-color:#1F2749;
+    background-color:#FFFFFF;
 }
 
 img {
@@ -28,7 +28,7 @@ img {
     font-weight: bold;
     font-size: 1em;
     text-align: left;
-    color: #185875;
+    color: #FFFFFF;
 }
 
 .container td {
@@ -59,33 +59,29 @@ img {
 
 /* Background-color of the odd rows */
 .container tr:nth-child(odd) {
-    background-color: #323C30;
+    background-color: #FFFFFF;
 }
 
 /* Background-color of the even rows */
 .container tr:nth-child(even) {
-    background-color: #2C3436;
+    background-color: #FFFFFF;
 }
 
 .container th {
-    background-color: #1F2719;
+    background-color: #F5F7F8;
 }
 
 .container td:first-child { color: #FB665A; }
 
 .container tr:hover {
-    background-color: #464A32;
-    -webkit-box-shadow: 0 6px 6px -6px #0E1119;
-    -moz-box-shadow: 0 6px 6px -6px #0E1119;
-    box-shadow: 0 6px 6px -6px #0E1119;
+    background-color: #F5F7F8;
 }
 
 .container td:hover {
-    background-color: #FFA842;
-    color: #403E30;
-    font-weight: bold;
+    background-color: #9A9B9C;
+    color: #EAECEF;
 
-    box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+    box-shadow: #EAECEF -1px 1px, #EAECEF -2px 2px, #EAECEF -3px 3px, #EAECEF -4px 4px, #EAECEF -5px 5px, #EAECEF -6px 6px;
     transform: translate3d(6px, -6px, 0);
 
     transition-delay: 0s;
